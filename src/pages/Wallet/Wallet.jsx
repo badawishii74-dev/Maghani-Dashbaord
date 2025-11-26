@@ -53,7 +53,7 @@ export default function WalletAdminPage() {
 
     const processRequest = async (values) => {
         try {
-            await axios.post(
+            await axios.patch(
                 `https://api.maghni.acwad.tech/api/v1/wallet/withdrawal-requests/${selectedRow.id}/process`,
                 values,
                 {
