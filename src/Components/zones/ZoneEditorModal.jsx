@@ -125,7 +125,7 @@ export default function ZoneEditorModal({ visible, onClose, onSubmit, initialZon
           type: "Polygon",
           coordinates: [toGeoJsonPolygonCoords(polygonLatLngs)[0]]
         },
-        isActive: values.isActive,
+        isActive: values.isActive || false,
         // shippingCost: values.shippingCost || "0.00"
       };
 
